@@ -1,0 +1,265 @@
+
+npm install @react-native-firebase/analytics 
+@react-native-firebase/app-check 
+@react-native-firebase/auth 
+@react-native-firebase/database 
+react-native-firebase/dynamic-links 
+@react-native-firebase/firestore 
+@react-native-firebase/functions 
+@react-native-firebase/in-app-messaging 
+@react-native-firebase/installations 
+@react-native-firebase/messaging 
+@react-native-firebase/remote-config 
+@react-native-firebase/storage
+
+Aula 62
+
+instalar node 
+
+npm install expo-cli --global DEPRECATED
+npm install expo-cli --location=global USE THIS I
+MAC ou Linux ==> sudo npm install expo-cli --global
+npm install react-native-gesture-handler
+
+
+
+expo init <nome do projeto>
+expo start
+
+expo build:android NÃO USA MAIS
+expo build:ios NÃO USA MAIS
+
+AGORA É ASSIM: 
+npm install -g eas-cli
+eas login
+
+PARA ANDROID
+eas build -p android OU eas build --platform android
+
+PARA IOS
+eas build --platform ios
+
+PARA TODAS AS PLATAFORMAS
+eas build --platform all
+
+incluir no eas.json:
+{
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "production": {}
+  }
+}
+
+PARA PREVIEW ANDROID, APK
+eas build -p android --profile preview
+
+Aula 63
+
+npm install react-native-elements
+npm install -g yarn
+npm install react-native-safe-area-context
+npm install react-native-gesture-handler
+
+Aula 64
+
+Aula 65
+
+expo install expo-av
+
+Aula 66
+
+Aula 67
+
+Aula 68 - Início E-library
+
+npm install -g yarn
+
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+yarn add react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+
+npm install@react-navigation/native
+yarn add @react-navigation/native
+npm install @react-navigation/bottom-tabs
+yarn add @react-navigation/bottom-tabs
+
+yarn add react-native-vector-icons
+
+
+Aula 69
+
+expo install expo-barcode-scanner
+expo install expo-permissions
+
+Aula 70
+
+expo install @expo-google-fonts/rajdhani
+expo install expo-font@~8.4.0
+
+npm install react-native-vector-icons
+
+Aula 71
+
+npm install @react-native-firebase OU npm install firebase
+
+Aula 72
+
+Aula 73
+
+Aula 74
+
+Aula 75
+
+npm install @react-navigation/stack
+npm install @react-navigation/native
+
+aula 76 - Início ISS-tracker
+
+npm install @react-navigation/stack
+npm install @react-navigation/native
+
+npm install -g yarn
+
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+
+Aula 78
+
+yarn add install react-native-maps
+yarn add axios ou npm add axios
+
+
+Aula 81 - Início Story Telling
+
+yarn add @react-navigation/native
+
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+yarn add @react-navigation/bottom-tabs
+
+yarn add @react-navigation/drawer
+
+yarn add @icons
+
+add linha: plugins:['react-native-reanimated/plugin'],
+em babel.config.js dentro do return
+
+yarn --reset-cache
+
+Aula 82
+
+yarn add @react-navigation/material-bottom-tabs react-native-paper
+yarn add react-native-responsive-fontsize
+expo install expo-font
+expo install expo-app-loading
+
+Aula 83
+
+yarn add react-native-dropdown-picker
+
+yarn add react-native-actions-sheet
+
+Aula 84
+
+yarn add @react-navigation/stack 
+expo install expo-speech
+
+Aula 85
+
+yarn add firebase@^8.2.10
+yarn add react-navigation
+expo install expo-google-app-auth
+
+
+******************************************************************************
+Erro de APIkey:
+
+Before:
+export const firebaseConfig = { apiKey: "", etc etc };
+
+After:
+export default firebaseConfig = { apiKey: "", etc etc };
+
+import {firebaseConfig} from './src/config/FirebaseConfig'; ===== Wrong Order
+import FirebaseConfig from './src/config/FirebaseConfig'; ===== Correct Order
+*******************************************************************************
+
+Aula 86
+
+
+Aula 87
+
+
+Aula 89
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Para alterar as permissões de aplicativo em um computador Mac, clique no ícone da Apple → acesse a opção "Preferências do Sistema" → clique em "Segurança e Privacidade" → clique em "Privacidade" → selecione um tipo de serviço → clique na caixa de seleção para permitir
+Escolha o gravação de tela - seleciona o navegador (Chrome) - clica no cadeado - coloca a senha - não precisa reiniciar, só atualizar.
+
+
+{
+  "cli": {
+    "version": ">= 0.53.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "distribution": "internal"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}

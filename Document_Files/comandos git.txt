@@ -1,0 +1,41 @@
+Dicionário Git e GitHub
+
+Git => Software de versionamento de arquivos
+
+GitHub => Repositório Remoto (online) do git
+
+GitHub Desktop => Interface amigável do git
+
+*****************************************************
+
+commit => salvar/confirmar alterações / criar um ponto de versionamento
+
+push => fazer upload do repositório local (git) para o repositório remoto (github)
+
+pull => fazer download das modificações do remoto para o local (igualar os repositórios)
+
+fetch => comparar a versão local com a versão remota para então decidir se é necessário fazer um push ou um pull
+
+origin => remoto
+
+branch => são cópias do repositório onde é possível fazer modificações sem alterar o arquivo original
+
+merge => é unificar/juntar os arquivos de uma branch com os arquivos originais (quando é feito isso o git faz uma verificação de duplicidades e te notifica)
+
+*******************************************************************************
+
+COMANDOS:
+
+git init => inicializa o git na pasta/ inicializa o versionamento da pasta/arquivo
+
+git add <arquivo> => prepara o arquivo para ser comitado
+
+git add . => prepara todos os arquivos da pasta para serem comitados
+
+git commit -m "mensagem" => realiza o commit *obs: trocar "mensagem" pela mensagem do seu commit
+**obs 2: ao realizar o commit todos os arquivos que foram adicionados serão comitados.
+
+git remote add origin "link do repositório remoto" => vincula o arquivo local ao repositório remoto
+
+git push -u origin master => faz o push dos arquivos para o repositório remoto vinculado
+*obs: para fazer o push via comando é necessário ter o repositório criado no github previamente.
